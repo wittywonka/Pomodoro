@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     background-color: #FF6347;
 }
@@ -73,15 +77,33 @@ body{
 
 }
 
-@media (max-width: 1440px) {
-
+@media (max-width: 600px) {
     #header {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
+
     #time {
-        font-size: 5rem;
+        font-size: 3rem;
     }
+
     #pomodoro {
-        padding: 30px;
+        padding: 20px;
+        max-width: 90%;
+        border-radius: 20px;
+    }
+
+    .button {
+        font-size: 1rem;
+        height: 40px;
+    }
+
+    #work,
+    #cycle {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
     }
 }
